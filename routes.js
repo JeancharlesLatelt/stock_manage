@@ -1,5 +1,5 @@
-const Pages = require('./controllers/pages.js');
-const Authentication = require('./controllers/authentication.js')
+const Pages = require('./controllers/pages');
+const Authentication = require('./controllers/authentication')
 
 exports.endpoints = [
   { method: 'GET',  path: '/',          config: Pages.index             },

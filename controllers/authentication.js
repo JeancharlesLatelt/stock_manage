@@ -1,5 +1,6 @@
 const Joi = require('joi');
-//const User = require('../models/user').User;
+const Database = require('../database');
+const User = require('../models/user').User;
 
 exports.login = {
   validate: {
