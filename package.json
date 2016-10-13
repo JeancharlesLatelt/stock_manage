@@ -1,12 +1,13 @@
 {
   "name": "stock_manage",
   "version": "1.0.0",
-  "description": "Toto",
+  "description": "toto",
   "main": "index.js",
   "dependencies": {
-    "boom": "^4.1.0",
     "hapi": "^15.1.1",
-    "mongojs": "^2.4.0"
+    "inert": "^4.0.2",
+    "joi": "^9.1.1",
+    "mongoose": "^4.6.3"
   },
   "devDependencies": {},
   "scripts": {
@@ -16,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/JeancharlesLatelt/stock_manage"
   },
-  "author": "",
+  "author": "Jean-Charles Lateltin, Quentin Meffre",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JeancharlesLatelt/stock_manage/issues"
