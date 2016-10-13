@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'bebas';
+    src: url('../police/bebas/bebasneue-webfont.woff2') format('woff2'),
+         url('../police/bebas/bebasneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lobster';
+    src: url('lobster_1.4-webfont.woff2') format('woff2'),
+         url('lobster_1.4-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#banner {
+  z-index: 2;
+  margin-top: 0;
+  padding: 20px;
+  font-family: 'lobster';
+  color: #DAF0F5;
+  background-color: #009FED;
+}
+
+.gear {
+  position:absolute;
+  right:-4.5%;
+  transition: 0.5s;
+}
+
+.gear:hover {
+  right:-2%;
+}

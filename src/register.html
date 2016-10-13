@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Manage</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style_register.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 </head>
 
@@ -16,19 +16,27 @@
       <img src="../img/baloon.png" style="width:30%;padding-top:0px;">
       <form class="pure-form">
         <fieldset>
-          <legend class="legend">Manage your players...</legend>
           <div class="pure-control-group">
-            <label for="name">Username</label>
             <input id="name" type="text" placeholder="Username">
           </div>
-          <input type="email" placeholder="Email">
-          <input type="password" placeholder="Password">
-          <label for="remember">
-            <input id="remember" type="checkbox"> Remember me
-          </label>
-          <br />
-          <div class="login"><button type="submit" class="pure-button pure-button-primary">Sign in</button></div>
-          <div class="register"><button type="submit" class="pure-button pure-button-primary">Register</button></div>
+
+          <div class="pure-control-group">
+            <input id="password" type="password" placeholder="Password">
+          </div>
+
+          <div class="pure-control-group">
+            <input id="password" type="password" placeholder="Retape your password">
+          </div>
+
+          <div class="pure-control-group">
+            <input id="email" type="email" placeholder="Email Address">
+          </div>
+
+          <div class="pure-controls">
+            <input id="cb" type="checkbox"> I've read the terms and conditions
+            <div class="ok"><a type="submit" class="pure-button pure-button-primary" href="index.html">Submit</a></div>
+            <div class="back"><a type="submit" class="pure-button pure-button-primary" href="login.html">Back to login</a></div>
+          </div>
         </fieldset>
       </form>
   </div>

@@ -37,7 +37,7 @@
   position: fixed;
   border-style: solid;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
-  padding: 20px;
+  padding: 30px;
   width: 260px;
   margin-top: 10%;
   margin-left: 40%;
@@ -66,3 +66,24 @@
  /********************/
  /*    REGISTER       /
  /********************/
+
+#name {
+  margin-top: 20px;
+}
+
+#password {
+  margin-top: 10px;
+}
+
+#email {
+  margin-top: 10px;
+}
+
+#cb {
+  margin-top: 20px;
+}
+
+.ok, .back {
+  display: inline-block;
+  margin-top: 20px;
+}
