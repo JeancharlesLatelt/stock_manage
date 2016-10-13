@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "hapi":"^1.0.0"
+    "hapi":"^1.0.0",
+    "mongoose": "^1.0.0"
   }
 }
