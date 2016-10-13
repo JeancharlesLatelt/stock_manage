@@ -1,9 +1,24 @@
 {
   "name": "stock_manage",
   "version": "1.0.0",
+  "description": "Toto",
   "main": "index.js",
   "dependencies": {
-    "hapi":"^1.0.0",
-    "mongoose": "^1.0.0"
+    "boom": "^4.1.0",
+    "hapi": "^15.1.1",
+    "mongojs": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JeancharlesLatelt/stock_manage"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeancharlesLatelt/stock_manage/issues"
   }
 }
