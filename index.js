@@ -1,20 +1,23 @@
 'use strict';
 
 const Hapi = require('hapi');
-const mongojs = require('mongojs');
-const server = new Hapi.Server();
+const Routes = require('./routes');
+const Config = require('./config')
+const User = require('./models/user').User;
 
-server.connection({
-    port: 8080
-});
-server.app.db = mongojs('stock_manage', ['user']);
-server.register([
-    require('./routes/login.js')
-], (err) => {
+const server = new Hapi.Server();
+server.connection({ port: 8080 });
+
+server.register(require('inert'), (err) => {
     if (err) {
         throw err;
     }
-    server.start((err) => {
-        console.log('Server running at:', server.info.uri);
-    });
+    server.route(Routes.endpoints);
+});
+server.start((err) => {
+
+    if (err) {
+        throw err;
+    }
+    console.log(`Server running at: ${server.info.uri}`);
 });
