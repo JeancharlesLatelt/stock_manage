@@ -5,7 +5,7 @@ Mongoose.connect(`mongodb://${Config.mongo.username}:${Config.mongo.password}@${
 let db = Mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error'));
-db.once('open', function callback() {
+db.once('open', function() {
   console.log('Connection with database succeeded.');
 });
 

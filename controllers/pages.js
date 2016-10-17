@@ -5,7 +5,7 @@ exports.index = {
 }
 
 exports.login = {
-  handler: function (request, reply) {
+  handler(request, reply) {
     reply.file('./src/login.html');
   }
 }

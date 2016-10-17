@@ -8,14 +8,18 @@ const User = require('./models/user').User;
 const server = new Hapi.Server();
 server.connection({ port: 8080 });
 
+//server.register([require('hapi-auth-jwt'), require('inert')], (err) => {
 server.register(require('inert'), (err) => {
+/*    server.auth.strategy('jwt', 'jwt', {
+        key: secret,
+        verifyOptions: { algorithms: ['HS256']}
+    });*/
     if (err) {
         throw err;
     }
     server.route(Routes.endpoints);
 });
 server.start((err) => {
-
     if (err) {
         throw err;
     }

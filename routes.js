@@ -8,6 +8,7 @@ exports.endpoints = [
 //  { method: 'GET',  path: '/logout',    config: Authentication.logout   },
   { method: 'POST', path: '/register',  config: Authentication.register },
   { method: 'GET',  path: '/src/styles/{path*}', handler: { directory: { path: './src/styles', listing: false, index: false } } },
-  { method: 'GET',  path: '/src/police/{path*}', handler: { directory: { path: './src/police', listing: false, index: false } } },
+  { method: 'GET',  path: '/police/{path*}',     handler: { directory: { path: './police',     listing: false, index: false } } },
   { method: 'GET',  path: '/img/{path*}',        handler: { directory: { path: './img',        listing: false, index: false } } },
+  { method: 'GET',  path: '/src/scripts/{path*}', handler: { directory: { path: '/src/scripts', listing: false, index: false } } },
 ];
