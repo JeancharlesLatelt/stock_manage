@@ -10,5 +10,5 @@ exports.endpoints = [
   { method: 'GET',  path: '/src/styles/{path*}', handler: { directory: { path: './src/styles', listing: false, index: false } } },
   { method: 'GET',  path: '/police/{path*}',     handler: { directory: { path: './police',     listing: false, index: false } } },
   { method: 'GET',  path: '/img/{path*}',        handler: { directory: { path: './img',        listing: false, index: false } } },
-  { method: 'GET',  path: '/src/scripts/{path*}', handler: { directory: { path: '/src/scripts', listing: false, index: false } } },
+  { method: 'GET',  path: '/scripts/{path*}', handler: { directory: { path: '/src/scripts', listing: false, index: false } } },
 ];
